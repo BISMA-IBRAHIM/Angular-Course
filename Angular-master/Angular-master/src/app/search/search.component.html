@@ -1,0 +1,9 @@
+<div class="search-div" [ngClass]="{changeBackground: searchValue!= '' }">
+    <span><b>Search</b></span>
+    <!-- <input type="text" (input)="changesearchValues($event)" > -->
+    <input type="text" [(ngModel)]="searchValue" >
+    <span  *ngIf="searchValue != '' ">You Search for "{{searchValue}}"</span>
+</div>
+
+
+
